@@ -1,0 +1,4 @@
+requests>=2.28
+rich>=13.0
+# For development dependencies (testing, linting), see pyproject.toml [project.optional-dependencies]
+# Install with: pip install -e ".[dev]"
