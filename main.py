@@ -25,6 +25,6 @@ SharePoint 批量下载工具
 if __name__ == "__main__":
     import sys
 
-    from sharepoint_dl.cli import main
+    from sharept_dl.cli import main
 
     sys.exit(main())

@@ -4,7 +4,7 @@ import pytest
 import requests
 import requests_mock
 
-from sharepoint_dl.session import (
+from sharept_dl.session import (
     SharePointSession,
     _detect_share_type,
     _extract_file_guid,
@@ -320,13 +320,13 @@ class TestBuildDownloadUrl:
 # ── 单文件分享测试 ──────────────────────────────────────────────────────
 
 SINGLE_FILE_URL = (
-    "https://tianyuanlaw-my.sharepoint.cn/:w:/r/personal/"
-    "cuibin_tylaw_com_cn/_layouts/15/Doc.aspx"
-    "?sourcedoc=%7B86800104-82B5-4891-A884-F59294D75F25%7D"
-    "&file=%E5%85%B3%E4%BA%8E%E8%B5%B5%E5%9B%BD%E5%AF%8C.docx"
+    "https://example.sharepoint.cn/:w:/r/personal/"
+    "test_user/_layouts/15/Doc.aspx"
+    "?sourcedoc=%7BAABBCCDD-EEFF-0011-2233-445566778899%7D"
+    "&file=%E6%B5%8B%E8%AF%95%E6%96%87%E4%BB%B6.docx"
     "&action=default&mobileredirect=true"
 )
-SINGLE_FILE_GUID = "86800104-82B5-4891-A884-F59294D75F25"
+SINGLE_FILE_GUID = "AABBCCDD-EEFF-0011-2233-445566778899"
 
 
 class TestDetectShareType:
@@ -371,7 +371,7 @@ class TestExtractFileGuid:
 class TestExtractFileName:
     def test_extract_decoded_filename(self):
         name = _extract_file_name(SINGLE_FILE_URL)
-        assert "赵国富" in name
+        assert "测试文件" in name
         assert name.endswith(".docx")
 
     def test_no_file_param_returns_none(self):
@@ -401,7 +401,7 @@ class TestSingleFileSession:
             assert sf_session.is_folder is False
             assert sf_session.file_guid == SINGLE_FILE_GUID
             assert sf_session.file_name is not None
-            assert "赵国富" in sf_session.file_name
+            assert "测试文件" in sf_session.file_name
 
     def test_collect_all_files_single(self, sf_session):
         """单文件 collect_all_files 调用 _collect_single_file。"""

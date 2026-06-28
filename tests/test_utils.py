@@ -4,7 +4,7 @@ import logging
 
 import pytest
 
-from sharepoint_dl.utils import (
+from sharept_dl.utils import (
     format_bytes,
     safe_quote,
     safe_quote_strict,

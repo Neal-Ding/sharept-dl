@@ -45,14 +45,14 @@ dev = [
 ]
 
 [project.scripts]
-sharept-dl = "sharepoint_dl.cli:main"
+sharept-dl = "sharept_dl.cli:main"
 
 [project.urls]
 Repository = "https://github.com/Neal-Ding/sharept-dl"
 Issues = "https://github.com/Neal-Ding/sharept-dl/issues"
 
 [tool.setuptools.packages.find]
-include = ["sharepoint_dl*"]
+include = ["sharept_dl*"]
 
 [tool.ruff]
 line-length = 120

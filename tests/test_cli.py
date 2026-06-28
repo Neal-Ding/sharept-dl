@@ -4,8 +4,8 @@ import argparse
 
 import pytest
 
-from sharepoint_dl.cli import _get_local_path, parse_args
-from sharepoint_dl.session import SharePointSession
+from sharept_dl.cli import _get_local_path, parse_args
+from sharept_dl.session import SharePointSession
 
 
 class TestParseArgs:

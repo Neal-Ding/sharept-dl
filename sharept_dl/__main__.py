@@ -1,4 +1,4 @@
-"""支持 ``python -m sharepoint_dl`` 运行。"""
+"""支持 ``python -m sharept_dl`` 运行。"""
 
 import sys
 

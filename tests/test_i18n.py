@@ -4,7 +4,7 @@ import os
 
 import pytest
 
-from sharepoint_dl.i18n import (
+from sharept_dl.i18n import (
     _detect_language,
     current_language,
     set_language,
@@ -98,7 +98,7 @@ class TestTranslation:
 
     def test_all_keys_in_both_languages(self):
         """验证中英文翻译键表完全一致。"""
-        from sharepoint_dl.i18n import _MESSAGES
+        from sharept_dl.i18n import _MESSAGES
 
         en_keys = set(_MESSAGES["en"].keys())
         zh_keys = set(_MESSAGES["zh"].keys())

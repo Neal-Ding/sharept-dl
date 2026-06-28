@@ -72,6 +72,18 @@ output/
 *.xlsx
 *.pdf
 *.pptx
+*.jpg
+*.jpeg
+*.png
+*.gif
+test_downloads/
+# Personal / confidential data — never commit
+证据/
+*证据*/
+*.docx
+*.xlsx
+*.pdf
+*.pptx
 
 # Playwright
 playwright-report/

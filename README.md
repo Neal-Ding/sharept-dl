@@ -127,7 +127,7 @@ pytest tests/ -v
 
 ```
 sharept-dl/
-├── sharepoint_dl/
+├── sharept_dl/
 │   ├── __init__.py       # Package exports
 │   ├── __main__.py       # python -m entry point
 │   ├── cli.py            # CLI argument parsing & main loop
@@ -157,7 +157,7 @@ sharept-dl automatically detects your system language:
 You can override the language in code:
 
 ```python
-from sharepoint_dl import set_language
+from sharept_dl import set_language
 set_language("en")  # force English
 set_language("zh")  # force Chinese
 ```
@@ -230,7 +230,7 @@ sharept-dl -u '...' --no-resume
 工具会根据系统语言自动选择提示语言，中文环境显示中文，其他环境显示英文。也可以通过代码手动设置：
 
 ```python
-from sharepoint_dl import set_language
+from sharept_dl import set_language
 set_language("en")  # 强制英文
 set_language("zh")  # 强制中文
 ```
