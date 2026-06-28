@@ -4,7 +4,8 @@
 递归枚举文件和下载，无需浏览器、无需登录。
 """
 
-__version__ = "0.1.0"
+from ._version import __version__  # noqa: E402, F401
+
 __all__ = [
     "SharePointSession",
     "format_bytes",

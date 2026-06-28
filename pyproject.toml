@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "sharept-dl"
-version = "1.0.0"
+dynamic = ["version"]
 description = "Download files from SharePoint shared links — pure HTTP, supports both folder and single file shares"
 readme = "README.md"
 license = {text = "MIT"}
@@ -50,6 +50,9 @@ sharept-dl = "sharept_dl.cli:main"
 [project.urls]
 Repository = "https://github.com/Neal-Ding/sharept-dl"
 Issues = "https://github.com/Neal-Ding/sharept-dl/issues"
+
+[tool.setuptools.dynamic]
+version = {attr = "sharept_dl._version.__version__"}
 
 [tool.setuptools.packages.find]
 include = ["sharept_dl*"]
