@@ -48,8 +48,8 @@ dev = [
 sharept-dl = "sharepoint_dl.cli:main"
 
 [project.urls]
-Repository = "https://github.com/user/sharept-dl"
-Issues = "https://github.com/user/sharept-dl/issues"
+Repository = "https://github.com/Neal-Ding/sharept-dl"
+Issues = "https://github.com/Neal-Ding/sharept-dl/issues"
 
 [tool.setuptools.packages.find]
 include = ["sharepoint_dl*"]
