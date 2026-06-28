@@ -5,7 +5,7 @@ build-backend = "setuptools.build_meta"
 [project]
 name = "sharept-dl"
 version = "0.1.0"
-description = "SharePoint 文件下载工具 — 纯 HTTP 实现，支持文件夹和单文件分享链接"
+description = "Download files from SharePoint shared links — pure HTTP, supports both folder and single file shares"
 readme = "README.md"
 license = {text = "MIT"}
 requires-python = ">=3.9"
