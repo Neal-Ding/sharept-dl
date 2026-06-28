@@ -182,8 +182,8 @@ class TestGetLocalPath:
         )
         sp.is_folder = False
         file_info = {
-            "name": "关于赵国富.docx",
-            "rel_path": "/personal/xxx/Documents/关于赵国富.docx",
+            "name": "示例文件.docx",
+            "rel_path": "/personal/xxx/Documents/示例文件.docx",
         }
         result = _get_local_path(sp, file_info)
-        assert result == "关于赵国富.docx"
+        assert result == "示例文件.docx"
